@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Pillars | CodeHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">CodeHub</a>
+        <nav class="center-nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="Python.html">Python</a>
+            <a href="javascript.html">JS</a>
+            <a href="csharp.html">C#</a>
+            <a href="java.html">Java</a>
+            <a href="html_css.html">Web</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="watermark-icon">
+        <h1>HTML & CSS: The Web Pillars</h1>
+
+        <h2 class="part-title">1. HTML5 Semantic Tags</h2>
+        <p>การใช้ Tag ให้ถูกความหมายเพื่อ SEO และการเข้าถึงข้อมูลที่ดีขึ้น</p>
+        
+        <pre class="code-block">
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;header&gt;
+            &lt;h2&gt;Blog Title&lt;/h2&gt;
+        &lt;/header&gt;
+        &lt;p&gt;เนื้อหาบทความ...&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+        </pre>
+
+        <h2 class="part-title">2. CSS Flexbox & Grid</h2>
+        <p>การจัดเลย์เอาต์หน้าเว็บให้สวยงามและยืดหยุ่น</p>
+        <pre class="code-block">
+/* Flexbox สำหรับจัดแถวเดี่ยว */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Grid สำหรับจัดตาราง 2 มิติ */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+        </pre>
+
+        <h2 class="part-title">3. Responsive Design (Media Queries)</h2>
+        <p>การปรับแต่งให้เว็บแสดงผลได้ดีทั้งบนมือถือและคอมพิวเตอร์</p>
+        <pre class="code-block">
+@media (max-width: 600px) {
+    .center-nav {
+        flex-direction: column;
+    }
+    .content {
+        padding: 10px;
+    }
+}
+        </pre>
+    </section>
+</body>
+</html>

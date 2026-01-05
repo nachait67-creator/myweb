@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>C# Professional | CodeHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">CodeHub</a>
+        <nav class="center-nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="Python.html">Python</a>
+            <a href="javascript.html">JS</a>
+            <a href="csharp.html">C#</a>
+            <a href="java.html">Java</a>
+            <a href="html_css.html">Web</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="watermark-icon">
+        <h1>C#: The Power of .NET</h1>
+
+        <h2 class="part-title">1. Data Types & OOP</h2>
+        <p>ภาษา C# เน้นความปลอดภัยของข้อมูล (Strongly-typed) และการสืบทอด Class</p>
+        <pre class="code-block">
+public class Player {
+    public string Name { get; set; } // Property
+    private int score = 0;
+
+    public void AddScore(int points) {
+        score += points;
+        Console.WriteLine($"{Name} has {score} points.");
+    }
+}
+        </pre>
+
+        <h2 class="part-title">2. LINQ (Language Integrated Query)</h2>
+        <p>เครื่องมือที่ช่วยให้การ Query ข้อมูลจาก List หรือฐานข้อมูลทำได้ง่ายเหมือน SQL</p>
+        <pre class="code-block">
+using System.Linq;
+
+List&lt;int&gt; numbers = new List&lt;int&gt; { 1, 5, 8, 12, 15 };
+var result = numbers.Where(n => n > 10).OrderBy(n => n);
+// ผลลัพธ์: 12, 15
+        </pre>
+
+        <h2 class="part-title">3. Async/Await (Multitasking)</h2>
+        <p>ช่วยให้โปรแกรมไม่ค้างขณะทำงานหนัก</p>
+        <pre class="code-block">
+public async Task&lt;string&gt; LoadWebPageAsync(string url) {
+    HttpClient client = new HttpClient();
+    return await client.GetStringAsync(url);
+}
+        </pre>
+    </section>
+</body>
+</html>

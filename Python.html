@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Mastery | CodeHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">CodeHub</a>
+        <nav class="center-nav">
+            <a href="index.html">Home</a>
+            <a href="Python.html">Python</a>
+            <a href="javascript.html">JS</a>
+            <a href="csharp.html">C#</a>
+            <a href="java.html">Java</a>
+            <a href="html_css.html">Web</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="watermark-icon">
+        <h1>Python: The Power of Simplicity</h1>
+        
+        <h2 class="part-title">1. Introduction & Variables</h2>
+        <p>Python เป็นภาษาที่อ่านง่าย (Readable) และใช้การย่อหน้า (Indentation) เพื่อแบ่ง Block ของโค้ด</p>
+        <pre class="code-block">
+# ตัวแปรและการคำนวณพื้นฐาน
+name = "Python 3"
+version = 3.12
+is_easy = True
+
+# List และ List Comprehension
+nums = [1, 2, 3, 4, 5]
+squares = [x**2 for x in nums] # ผลลัพธ์: [1, 4, 9, 16, 25]
+        </pre>
+
+        <h2 class="part-title">2. Functions & Lambda</h2>
+        <p>การสร้างฟังก์ชันเพื่อใช้ซ้ำ และ Lambda สำหรับฟังก์ชันบรรทัดเดียว</p>
+        <pre class="code-block">
+def greet(user="Guest"):
+    return f"สวัสดีคุณ {user}"
+
+# Lambda Function
+multiply = lambda x, y: x * y
+print(multiply(5, 4)) # 20
+        </pre>
+
+        <h2 class="part-title">3. Object-Oriented Programming (OOP)</h2>
+        <p>หัวใจของการเขียนโปรแกรมระดับสูงคือการจัดการ Class และ Object</p>
+        
+        <pre class="code-block">
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name} says Woof!"
+
+my_dog = Dog("Buddy")
+print(my_dog.speak())
+        </pre>
+
+        <h2 class="part-title">4. Error Handling (Try-Except)</h2>
+        <p>ป้องกันโปรแกรมพังเมื่อเกิดข้อผิดพลาดระหว่างรัน</p>
+        <pre class="code-block">
+try:
+    num = int(input("ใส่ตัวเลข: "))
+    result = 10 / num
+except ValueError:
+    print("กรุณาใส่เฉพาะตัวเลขเท่านั้น")
+except ZeroDivisionError:
+    print("ไม่สามารถหารด้วยศูนย์ได้")
+        </pre>
+    </section>
+</body>
+</html>

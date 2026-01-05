@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern JS | CodeHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">CodeHub</a>
+        <nav class="center-nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="Python.html">Python</a>
+            <a href="javascript.html">JS</a>
+            <a href="csharp.html">C#</a>
+            <a href="java.html">Java</a>
+            <a href="html_css.html">Web</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="watermark-icon">
+        <h1>JavaScript: The Web Engine</h1>
+
+        <h2 class="part-title">1. modern Syntax (ES6+)</h2>
+        <p>ใช้ `const` และ `let` แทน `var` และทำความรู้จักกับ Arrow Function</p>
+        <pre class="code-block">
+const users = ['Alice', 'Bob', 'Charlie'];
+const greetAll = users.map(user => `Hello, ${user}`);
+
+// Destructuring
+const person = { name: 'Somsak', age: 30 };
+const { name, age } = person;
+        </pre>
+
+        <h2 class="part-title">2. Asynchronous (Promise & Async/Await)</h2>
+        <p>การจัดการงานที่ต้องรอนานๆ เช่น การดึงข้อมูลจาก API</p>
+        
+        <pre class="code-block">
+const fetchData = async () => {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error("เกิดข้อผิดพลาด:", error);
+    }
+};
+        </pre>
+
+        <h2 class="part-title">3. DOM Manipulation</h2>
+        <p>การเปลี่ยนเนื้อหาและสไตล์ของหน้าเว็บแบบ Dynamic</p>
+        <pre class="code-block">
+const title = document.querySelector('h1');
+title.style.color = 'blue';
+
+const btn = document.getElementById('myBtn');
+btn.addEventListener('click', () => {
+    alert('ปุ่มถูกกดแล้ว!');
+});
+        </pre>
+    </section>
+</body>
+</html>
